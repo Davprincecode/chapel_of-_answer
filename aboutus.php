@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="contactus.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="contact-section">
+
+    <div class="top-content">
+     <h2><a href="index.php" style="text-decoration:none; color:white;">
+     Home</a>
+    </h2>
+
+     <div class="burger" id="hamburger">
+<i class="fas fa-bars" style="
+position: absolute;
+    width: 100%;
+    height: 100%;
+    right: -3%;
+    line-height: 60px;
+    font-size: 28px;
+    color: white;
+    text-align: center;
+    color: black;
+"></i>
+</div>
+<div class="menu">
+    <label for="check1">
+    <a href="index.php" style="text-decoration:none; color:black;">
+     Home</a></label>
+    <label for="check2"><a href="index.php" style="text-decoration:none; color:black;">
+     Learn more</a></label>
+    <label for="check4"><a href="index.php" style="text-decoration:none; color:black;">
+     About us</a></label></div>
+</div>
+
+<h1>
+    Contact Us
+</h1>
+
+<h2 style="text-align:center;">07089326099 or What's App : 07089326099</h2>
+<form action="../includes/contactus.php" method="post" class="contact-form">
+<input type="text" name="name" id=""  class="contact-text" placeholder="Your name">
+
+<input type="text" name="email" id=""  class="contact-text" placeholder="Email">
+
+<input type="text" name="phonenumber" id="" class="contact-text" placeholder="Phonenumber">
+
+<textarea name="contect" id="" class="contact-text" placeholder="Your message"></textarea>
+<button  name="submit" class="contact-btn">
+    send
+</button>
+</form>
+
+    </div>
+    </div>
+
+    <script>
+let hamburger = document.querySelector('#hamburger');
+    let menu = document.querySelector('.menu');
+
+    hamburger.addEventListener('click', () =>{
+        menu.classList.toggle('show');
+    });
+
+</script>
+</body>
+</html>
